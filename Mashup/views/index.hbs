@@ -1,0 +1,56 @@
+
+<div class="navbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Stock Analyser</a></li>
+      <li><a href="gainers">NASDAQ Gainers</a></li>
+      <li><a href="losers">NASDAQ Losers</a></li>
+    </ul>
+  </div>
+
+<body>
+  <table style="width:100%">
+    <h1>NASDAQ top 5</h1>
+    <p>Page view: {{pageViewCount}}</p>
+      <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>Sector</th>
+      </tr>
+      <tr>
+        <td>{{ Data.[0].symbol}}</td>
+        <td>{{ Data.[0].name}}</td>
+        <td>{{ Data.[0].sector}}</td>
+      </tr>
+      <tr>
+        <td>{{ Data.[1].symbol}}</td>
+        <td>{{ Data.[1].name}}</td>
+        <td>{{ Data.[1].sector}}</td>
+      </tr>
+      <tr>
+        <td>{{ Data.[2].symbol}}</td>
+        <td>{{ Data.[2].name}}</td>
+        <td>{{ Data.[2].sector}}</td>
+      </tr>
+      <tr>
+        <td>{{ Data.[3].symbol}}</td>
+        <td>{{ Data.[3].name}}</td>
+        <td>{{ Data.[3].sector}}</td>
+      </tr>
+      <tr>
+        <td>{{ Data.[4].symbol}}</td>
+        <td>{{ Data.[4].name}}</td>
+        <td>{{ Data.[4].sector}}</td>
+     
+  </table>
+
+<h1>Article Recommendations</h1>
+<h3>{{Data.[5].title}} - {{Data.[5].author}}</h3>
+<button class="button" onclick="window.location.href='{{Data.[5].url}}';">Article</button>
+
+<h3>{{Data.[6].title}} - {{Data.[6].author}}</h3>
+<button class="button" onclick="window.location.href='{{Data.[6].url}}';">Article</button>
+
+<h3>{{Data.[7].title}} - {{Data.[7].author}}</h3>
+<button class="button" onclick="window.location.href='{{Data.[7].url}}';">Article</button>
+
+</body>

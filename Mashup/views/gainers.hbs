@@ -1,0 +1,65 @@
+<div class="navbar">
+    <ul >
+      <li class="active"><a href="/">Stock Analyser</a></li>
+      <li><a href="gainers">NASDAQ Gainers</a></li>
+      <li><a href="losers">NASDAQ Losers</a></li>
+    </ul>
+</div>
+<body>
+  <table style="width:100%">
+    <h1>NASDAQ's Daily Highest Gain Stocks</h1>
+      <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>Change</th>
+        <th>Price</th>
+        <th>Change Percentage</th>
+      </tr>
+      <tr>
+        <td>{{ Data.[0].symbol}}</td>
+        <td>{{ Data.[0].name}}</td>
+        <td>${{ Data.[0].change}}</td>
+        <td>${{ Data.[0].price}}</td>
+        <td>{{ Data.[0].changesPercentage}}%</td>
+      </tr>
+      <tr>
+        <td>{{ Data.[1].symbol}}</td>
+        <td>{{ Data.[1].name}}</td>
+        <td>${{ Data.[1].change}}</td>
+        <td>${{ Data.[1].price}}</td>
+        <td>{{ Data.[1].changesPercentage}}%</td>
+      </tr>
+      <tr>
+        <td>{{ Data.[2].symbol}}</td>
+        <td>{{ Data.[2].name}}</td>
+        <td>${{ Data.[2].change}}</td>
+        <td>${{ Data.[2].price}}</td>
+        <td>{{ Data.[2].changesPercentage}}%</td>
+      </tr>
+      <tr>
+        <td>{{ Data.[3].symbol}}</td>
+        <td>{{ Data.[3].name}}</td>
+        <td>${{ Data.[3].change}}</td>
+        <td>${{ Data.[3].price}}</td>
+        <td>{{ Data.[3].changesPercentage}}%</td>
+      </tr>
+      <tr>
+        <td>{{ Data.[4].symbol}}</td>
+        <td>{{ Data.[4].name}}</td>
+        <td>${{ Data.[4].change}}</td>
+        <td>${{ Data.[4].price}}</td>
+        <td>{{ Data.[4].changesPercentage}}%</td>
+      </tr>
+   
+</table>
+<h1>Recommendations</h1>
+<iframe width="400" height="250" src="http://youtube.com/embed/{{Data.[51].Vtitle}}" frameborder = 0 allowfullscreen></iframe>
+<iframe width="400" height="250" src="http://youtube.com/embed/{{Data.[52].Vtitle}}" frameborder = 0 allowfullscreen></iframe>
+<iframe width="400" height="250" src="http://youtube.com/embed/{{Data.[53].Vtitle}}" frameborder = 0 allowfullscreen></iframe>
+<h1>Article Recommendations</h1>
+
+<h3>{{Data.[55].title}}</h3>
+<button class="button" onclick="window.location.href='{{Data.[55].url}}';">Article</button>
+
+</body>
+</body>
