@@ -1,6 +1,6 @@
 # Project overview
 This project was developed as part of a University project with the aim to create an application that is a mahsup of two APIs. The application utilises a financial modelling API paired with youtubes API to provide and display data on stocks within the Nasdaq.
-#Demo
+# Demo
 
 
 ## Available Scripts
